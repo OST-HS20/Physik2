@@ -1,0 +1,83 @@
+\section{Fluiddynamik}
+\subsection{Auftriebskraft \kuchling{154}}
+\begin{formulaexpanded}
+	{F_A = V_{Fl} \cdot \rho_{Fl} \cdot g = m_{Fl} \cdot g}
+	\rho & Dichte & [\frac{kg}{m^3}] \\
+	V_{Fl} & Volumen verdrängten Flüssigkeit & [m^3] \\
+\end{formulaexpanded}
+
+\subsection{Kontinuitäts-/ Bernoulligleichung}
+Oft werden folgende Gleichungen für eine Aufgabe benötigt. \kuchling{162ff}
+\begin{formulaexpanded}
+	{A_1 \cdot v_1 = A_2 \cdot v_2 = \dot V}
+	A & Querschnitt an Stelle $x$ & [m^2] \\
+	v & Strömungsgeschw. an Stelle $x$ & [m/s] \\
+	\dot V & Volumenstrom & [\frac{m^3}{s}] \\
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{p_1 + \rho g h_1 + \frac{\rho}{2}v_1^2 = p_2 + \rho g h_2 + \frac{\rho}{2}v_2^2}
+	p & Druck an Stelle $x$ & [Pa] \\
+	h & Höhe an Stelle $x$ & [m/s] \\
+	\rho & Dichte der Flüssigkeit & [\frac{kg}{m^3}] \\
+	v & Strömungsgeschw. an Stelle $x$ & [m/s] \\
+\end{formulaexpanded}
+
+\subsection{Strömungen}
+Dynamische Viskosität $\eta$ \kuchling{168}
+\begin{formulaexpanded}
+	{\tau = \eta \frac{v}{d}}
+	\tau & Schubspannung & [F] \\
+	\eta & Zähigkeit & [Pa\cdot s] \\
+	d & Abstand der Begrenzungsflächen voneinander & [m] \\
+	v & Relativgeschwindigkeit zwischen Begrenzungsflächen & [m/s] \\
+\end{formulaexpanded}
+
+\begin{minipage}{\textwidth}	
+	\todo{Laminar oder Turbulent via Reynoldszahl}
+	
+	\begin{minipage}{0.2\textwidth}
+		\includegraphics[width=\columnwidth]{Images/Strömungen}
+	\end{minipage}%%% to prevent a space
+	\begin{minipage}{0.3\textwidth}
+		
+	\end{minipage}
+\end{minipage}
+
+\begin{minipage}{\textwidth}	
+	\kuchling{173}~\\
+
+	\begin{minipage}{0.12\textwidth}
+		\includegraphics[width=\columnwidth]{Images/flugzeugflügel}
+		\\~\\~\\~\\~\\
+		\\~\\~\\~\\~\\
+		\includegraphics[width=\columnwidth]{Images/flugzeugflügel1}
+	\end{minipage}%%% to prevent a space
+	\begin{minipage}{0.35\textwidth}
+		\begin{formulaexpanded}
+			{F_D = c_w \cdot A_s \cdot \frac{\rho}{2} \cdot v^2}
+		\end{formulaexpanded}
+		\begin{formulaexpanded}
+			{F_A = F_G = c_a \cdot A_p \cdot \frac{\rho}{2} \cdot v^2}
+		\end{formulaexpanded}	
+		\begin{formulaexpanded}
+			{F_V = F_W = c_w \cdot A_p \cdot \frac{\rho}{2} \cdot v^2}
+			F_x & Widerstand & [F] \\
+			F_D & Druckwiderstand $\neq$ $F_V$ & [F] \\
+			c_w & Widerstandszahl & [1] \\
+			\rho & Dichte & [\frac{kg}{m^3}] \\
+			v & Strömungsgeschwindigkeit & [m/s] \\
+			A_p & projezierte Fläche $\parallel$ Strömung & [m^2] \\
+			A_s & projezierte Fläche $\perp$ Strömung & [m^2] \\
+		\end{formulaexpanded}
+	~\\
+		\begin{formulaexpanded}
+			{\tan \varphi = \frac{F_W}{F_A} = \frac{c_w}{c_a} = \frac{v_v}{v_h}}
+			\varphi & Winkel & [\circ] \\
+			c_x & Widerstands/-Auftriebskoeff. & [1] \\
+			v_x & Vert./-Hori. Geschwindigkeit & [m/s] \\
+		\end{formulaexpanded}
+	\end{minipage}
+\end{minipage}
+
+\newpage

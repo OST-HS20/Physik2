@@ -1,15 +1,62 @@
-% Document information
-\newcommand{\titleinfo}{Zusammenfassung Template}
-\newcommand{\authorinfo}{Name Nachname}
+	% Document information
+\newcommand{\titleinfo}{Formelsammlung Physik2}
+\newcommand{\authorinfo}{Sandro Pedrett}
 \newcommand{\version}{1.0}
 \newcommand{\versioninfo}{FS21}
 % Header
 \include{Template/Header}
 
+% see https://tex.stackexchange.com/a/95842 for more information
+\newenvironment{formula}[1]{
+	\noindent\par 
+	\begin{tabular*}{\columnwidth}{l  @{\extracolsep{\fill}} r}
+		\colorboxed{red}{
+			\begin{aligned}#1\end{aligned}
+		}
+		&
+		\begin{tabular}{
+				>{$}l<{$}
+				@{${}:{}$} l
+				>{$}r<{$}
+			}
+} {
+		\end{tabular}
+	\end{tabular*}
+}
+\newenvironment{formulaexpanded}[1]{
+	\noindent\par
+	\begin{center} 
+	\begin{tabular*}{\columnwidth}{c}
+		\colorboxed{red}{
+			\begin{aligned}#1\end{aligned}
+		}
+	\end{tabular*}
+	\begin{tabular}{
+		>{$}l<{$}
+		@{${}:{}$} l
+		>{$}r<{$}
+	}
+} {
+	\end{tabular}
+	\end{center}
+}	
+
+% Verweise
+\newcommand{\kuchling}[1]{\verweisextern{Kuchling}{#1}}
+
 % Document
 \begin{document}
 
-\tableofcontents
-\input{Sections/First Section}
+\input{Sections/Grundlagen}
+\input{Sections/Hydraulik}
+\input{Sections/Thermodynamik}
+
+\begin{thebibliography}{1}
+	\bibitem{kuchling}
+	Taschenbuch der Physik,
+	21. \"uberarbeitete Auflage, 2014 (1977),
+	\textit{Horst Kuchling}, 
+	\texttt{ISBN 978-3-446-44218-4}
+\end{thebibliography}
 
 \end{document}

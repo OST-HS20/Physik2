@@ -1,0 +1,282 @@
+\section{Thermodynamik}
+\subsection{Konstanten}
+Avogadro-Konstante: $N_A = 6.022\cdot10^23 \frac{1}{mol}$\\
+Bolzmann-Konstante: $k_B = 1.381 \cdot 10^{-23} \frac{J}{K}$\\
+Gas-Konstante: $R = k_B \cdot N_A = 8.314 \frac{J}{mol\cdot K}$\\
+
+\begin{formula}
+	{p \cdot V = N \cdot k_B \cdot T}
+	N & Anzahl Molekühle & [1] \\
+	T & Temperatur & [K] \\
+\end{formula}
+
+\subsection{Ausdehnungen \kuchling{244}}
+\noindent\begin{formula}
+	{\Delta l = \alpha l \Delta T}
+\end{formula}
+\noindent\begin{formula}
+	{\Delta A = \beta A \Delta T \qquad \beta = 2\alpha}
+	l & Original-Länge & [m] \\
+	A & Original-Fläche & [m^2] \\
+	V & Original-Volumen & [m^3] \\
+	\Delta T & Temp. Diff & [^\circ C]
+\end{formula}
+\noindent\begin{formula}
+	{\Delta V = \gamma V \Delta T \qquad \gamma = 3\alpha}
+\end{formula}
+
+\begin{formula}
+	{\sigma = E \cdot \alpha \cdot \Delta T}
+	\sigma & Thermische Spannung & [] \\
+	E & Elastizitätsmodul & [] \\
+	\alpha & Längenausdehnungskoeff. & [] \\
+	\Delta T & Temp. Diff & [^\circ C]
+\end{formula}
+
+\subsection{Gase}
+\subsubsection{Ideale Gase}
+\begin{formula}
+	{n = \frac{m}{M} = \frac{N}{N_A}}
+	n & Stoffmenge & [mol] \\
+	m & Masse & [kg] \\
+	M & Mol-Masse (Periodesys.) & [mol] \\
+	N & Anzahl Zeilchen & [1]
+\end{formula}
+\begin{formula}
+	{p\cdot V = n \cdot R \cdot T}
+	p & Druck & [Pa] \\
+	V & Volumen & [m^3] \\
+	n & Stoffmenge & [mol] \\
+	T & Temp & [K]
+\end{formula}
+
+
+
+\subsubsection{Zustandsänderung \kuchling{297}}
+\noindent\textbf{Isochor} (gleiches Volumen) \kuchling{287}
+\begin{formula}
+	{Q = m \cdot c_{v} \cdot \Delta T}
+	Q & Wärmeenergie & [J] \\
+	c_v & spezifische Wärmekapazität & [\frac{J}{kgK}] \\
+	m & Masse des Gases & [kg] \\
+\end{formula}
+\begin{formula}
+	{W = 0}
+	W & Arbeit & [J] \\
+\end{formula}
+~\\
+
+\noindent\textbf{Isobar}  (gleicher Druck)\kuchling{288}
+\begin{formula}
+	{Q = m \cdot c_{p} \cdot \Delta T}
+	Q & Wärmeenergie & [J] \\
+	c_p & spezifische Wärmekapazität & [\frac{J}{kgK}] \\
+	m & Masse des Gases & [kg] \\
+\end{formula}
+\begin{formula}
+	{W = - p \cdot \Delta V}
+	W & Arbeit & [J] \\
+	\Delta V & Volumenänderung & [m^3] \\
+\end{formula}
+~\\
+
+\noindent\textbf{Isotherm} (gleiche Temp.) \kuchling{289}
+\begin{formula}
+	{Q = W}
+	Q & Wärmeenergie & [J]
+\end{formula}
+\begin{formula}
+	{W &= p\cdot V \ln\left(\frac{V_1}{V_2}\right) \\
+		&= p\cdot V \ln\left(\frac{p_2}{p_1}\right)}
+	W & Arbeit & [J] \\
+	V & Volumen & [m^3] \\
+	V_1 & Anfangsvolumen & [m^3] \\
+	V_2 & Endvolumen & [m^3] \\
+	p_1 & Anfangsdruck & [Pa] \\
+	p_2 & Enddruck & [Pa] \\
+\end{formula}
+~\\
+
+\noindent\textbf{Adiabatisch} (Kein Wärmeaustausch) \kuchling{291}
+\begin{formula}
+	{Q = 0}
+	Q & Wärmeenergie & [J]
+\end{formula}
+\begin{formula}
+	{W = c_v \cdot m \cdot \Delta T}
+	W & Arbeit & [J] \\
+	c_v & spezifische Wärmekapazität & [\frac{J}{kgK}] \\
+	m & Masse des Gases & [kg] \\ 
+\end{formula}
+~\\
+
+\subsubsection{Reale Gase \kuchling{281}}
+
+\begin{formula}
+	{a = \frac{9}{8}R\cdot T_k \cdot V_{mk}}
+\end{formula}
+\begin{formula}
+	{b = \frac{V_{mk}}{3}}
+\end{formula}
+\begin{formulaexpanded}
+	{\left(p + \frac{n^2 \cdot a}{V^2} \right) \cdot (V - n\cdot b) = n \cdot R \cdot T}
+	a,b & VAN-DER-WAALS Konstanten & [*] \\
+	p & Druck & [Pa] \\
+	V & Volumen & [m^3] \\
+	n & Stoffmenge & [mol] \\
+	T & Temp & [K] \\
+	T_k & Temp-Kritisch & [K] \\
+	V_{mk} & Mol-Volumen-Kritisch & [m^3] \\
+\end{formulaexpanded}
+
+\subsection{Wärme}
+Wärmebilanz. $+$ für Zugeführte Wärme-Menge, $-$ für abgeführte Wärme-Menge:
+\begin{formulaexpanded}
+	{\sum_{i=1}^{n}\left(\Delta Q_i + Q_{f,i} + Q_{s,i}\right) = 0}
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{Q_f = q_f \cdot m \qquad Q_s = q_s \cdot m}
+	Q_x & Schmelz-/Verdampfungswärme & [J] \\
+	q_x & Spezifische Wärme & [\frac{kJ}{kg}] \\
+	m & Masse & [kg]
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{Q = c \cdot m \cdot \Delta T = C \Delta T}
+	Q & Wärmekapazität & [J] \\
+	C & absolute Wärmekapazität & [\frac{kJ}{kg}] \\
+	c & spezifische Wärmekapazität & [\frac{kJ}{kg}] \\
+	m & Masse & [kg] \\
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{\overline{v} = \sqrt{\frac{8 \cdot k_b \cdot T}{\pi \cdot m}} = \sqrt{\frac{8 \cdot R \cdot T}{\pi \cdot M}}}
+	\overline{v} & Mittle Molekühl Geschwindigkeit & [m/s] \\
+	k_b & Boltzmann-Konstante \kuchling{310} & [J/K] \\
+	T & Absolute Temperatur & [K] \\
+	M & Molekühlmasse & [kg/mol] \\
+	m & Masse & [kg] \\
+\end{formulaexpanded}
+
+\subsection{Wärmestrahlung \kuchling{330}}
+\begin{formula}
+	{K = \epsilon \sigma T^4 = \frac{R^2}{r^2}\cdot \frac{P}{A} \qquad E = \frac{P}{A}}
+\end{formula}
+\begin{formulaexpanded}
+	{P = \sigma \epsilon A T^4}
+	P & Strahlungsleistung & [W] \\
+	E & Bestrahlungsstärke & [\frac{W}{m^2}] \\
+	K & Emmissionsvermögen & [\frac{W}{m^2}] \\
+	A & strahlende Oberfläche & [m^2] \\
+	T & Absolute Temperatur & [K] \\
+	R & Radius d. bestr. Fläche & [m] \\
+	r & Wärmequelleradius & [m] \\
+	\epsilon & Emissionsgrad \kuchling{648} & [-] \\
+	\sigma = 5.670 \cdot 10^{-8} & Konstante & [\frac{W}{m^2K^4}] 
+\end{formulaexpanded}
+
+
+\subsection{Wärmeleitung}
+\begin{formulaexpanded}
+	{\dot{Q_W} = A \cdot J = A\cdot k \cdot \Delta T}
+	\dot{Q_W} & Wärmetransport durch Leitung & [W] \\
+	J & Wärmestromdichte & [\frac{W}{m^2}] \\
+	A & Fläche & [m^2] \\
+	k & Wärmedurchgangskoeff. \kuchling{326} & [\frac{W}{m^2K}] \\
+\end{formulaexpanded}
+\begin{formulaexpanded}
+	{\dot{Q}_L = c_p \cdot \rho \cdot \dot{V} \cdot \Delta T}
+	\dot{Q}_L & Wärmetransport durch Fluid & [W] \\
+	c_p & Spezifische Wärmekapazität & [\frac{kJ}{kgK}] \\
+	\dot{V} & Volumenstrom & [\frac{m^3}{s}] \\
+	\rho & Dichte von Fluid & [] \\
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{J &= k(T_i-T_a) \\
+       &= \alpha_i(T_i - T_{wi}) \\
+       &= \alpha_a(T_{wa} - T_a) \\
+       &= \sigma \cdot \epsilon(T_i^4 - T_a^4) \\
+    }
+	J & Wärmestromdichte & [\frac{W}{m^2}] \\
+	\lambda & Wärmeleitfähigkeit \kuchling{644} & [\frac{W}{mK}] \\
+	\alpha_i & Wärmeüberg.koeff. Innen \kuchling{646} & [\frac{W}{m^2K}] \\
+	\alpha_a & Wärmeüberg.koeff. Aussen \kuchling{646} & [\frac{W}{m^2K}] \\
+	T_i & Innentemperatur & [^\circ C] \\
+	T_{wi} & Wandtemperatur Innen & [^\circ C] \\
+	T_a & Aussentemperatur & [^\circ C] \\
+	T_{wa} & Wandtemperatur Aussen & [^\circ C] \\
+	k & Wärmedurchgangskoeff. \kuchling{326} & [\frac{W}{m^2K}] \\
+	\epsilon & Emissionsgrad \kuchling{648} & [-] \\
+	\sigma & Konstante & [\frac{W}{m^2K^4}] \\
+\end{formulaexpanded}
+
+\subsubsection{Wärmekoeffizient}
+\noindent\textbf{Wand} mit mehreren Schichten:
+\begin{formulaexpanded}
+	{\frac{1}{k} = \frac{1}{\alpha_i} + \sum_{j=1}^{m}{\frac{1}{k_j}} + \sum_{i=1}^{n}{\frac{l_i}{\lambda_i}} + \frac{1}{\alpha_a}}
+	\alpha_i & Wärmeübergangskoeff. Innen \kuchling{646} & [\frac{W}{m^2K}] \\
+	\alpha_a & Wärmeübergangskoeff. Aussen \kuchling{646} & [\frac{W}{m^2K}] \\
+	\lambda & Wärmeleitfähigkeit \kuchling{644} & [\frac{W}{mK}] \\
+	l & Wanddicke & [m] \\
+	k & Wärmedurchgangskoeff. \kuchling{326} & [\frac{W}{m^2K}] \\
+\end{formulaexpanded}
+
+\noindent\textbf{Rohr} mit mehreren Schichten:
+\begin{formulaexpanded}
+	{\frac{1}{k} = r_a \cdot \left[\frac{1}{\alpha_i r_i} + \sum_{x=1}^{n}{\left(\frac{1}{\lambda_x}\ln\left(\frac{r_{xa}}{r_{xi}}\right)\right)} + \frac{1}{\alpha_a r_a}\right]}
+	\alpha_i & Wärmeübergangskoeff. Innen & [\frac{W}{m^2K}] \\
+	\alpha_a & Wärmeübergangskoeff. Aussen & [\frac{W}{m^2K}] \\
+	r_i & Radius Innen & [m] \\
+	r_a & Radius Aussen & [m] \\
+	r_{xi} & Radius x-te Ebene Innen & [m] \\
+	r_{xa} & Radius x-te Ebene Aussen & [m] \\
+	\lambda_x & Wärmeleitfähigkeit \kuchling{644} & [\frac{W}{mK}] \\
+\end{formulaexpanded}
+
+\subsection{Luftfeuchtigkeit \kuchling{278}}
+Bei \textbf{Wasser} kann der Dampfdruck mit der Magnus-Formel berechnet werden. Für andere Fälle Clausius-Clapeyron-Gleichung verwenden.
+\begin{formulaexpanded}
+	{p_s(\theta) =\left\{\begin{array}{ll}
+			\theta \geq 0 & p_{s0} \cdot 10^{\frac{7.5\cdot\theta}{\theta + 237}} \\
+			\theta \leq 0 & p_{s0} \cdot 10^{\frac{9.5\cdot\theta}{\theta + 265.5}}
+		\end{array}\right.}
+	\theta & Temperatur & [^\circ C] \\
+	p_{s0} = 610.7Pa & Dampfdruck bei $0^\circ C$ & [Pa] \\
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{\theta(p_s) =\left\{\begin{array}{ll}
+			p_s \geq p_{s0} & \frac{237\cdot\log\left(\frac{p_s}{6.107}\right)}{7.5 - \log\left(\frac{p_s}{6.107}\right)} \\
+			p_s \leq p_{s0} &  \frac{265.5\cdot\log\left(\frac{p_s}{p_{s0}}\right)}{9.5 - \log\left(\frac{p_s}{p_{s0}}\right)}
+		\end{array}\right.}
+	\theta & Temperatur & [^\circ C] \\
+	p_{s0} = 610.7Pa & Dampfdruck bei $0^\circ C$ & [Pa] \\
+\end{formulaexpanded}
+
+\noindent Der Taupunkt ist bei Luft mit einer bestimmten Luftfeuchtigkeit diejenige Temperatur, die bei konstantem Druck unterschritten werden muss, damit sich Wasserdampf abscheiden kann:
+\begin{formulaexpanded}
+	{\theta_D(\theta, f_r) = \frac{237 \cdot \left(\log(f_r) + \frac{7.5 \cdot \theta}{\theta + 237}\right)}{7.5-\left(\log(f_r) + \frac{7.5 \cdot \theta}{\theta + 237}\right)}}
+	\theta & Temperatur & [^\circ C] \\
+	\theta_D & Taupunkt Temperatur & [^\circ C] \\
+	f_r & Relative Luftfeuchtigkeit & [\%] \\
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{f = \frac{m_w}{V} \qquad f_r = \frac{m_w}{m_s} = \frac{p_D}{p_S}}
+	f & Absolute Luftfeuchtigkeit & [] \\
+	m_w & Masse Wasserdampf & [] \\
+	m_s & Masse Wasserdampf bei Sättigung & [] \\
+	p_D & Partialdruck Wasserdampf & [] \\
+	p_S & Sättigungsdruck Wasserdampf & [] \\
+	V & Volumen & [m^3] \\
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{f_{ri} = \frac{p_s(\theta_a)}{p_s(\theta_i)}\cdot f_{ra}}
+	f_{ri} & Relative Innen-Feuchte & [\%] \\
+	f_{ra} & Relative Aussen-Feuchte & [\%] \\
+	\theta_i & Innen Temperatur & [^\circ C] \\
+	\theta_a & Aussen Temperatur & [^\circ C] \\
+\end{formulaexpanded}
