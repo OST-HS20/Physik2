@@ -6,6 +6,31 @@
 	V_{Fl} & Volumen verdrängten Flüssigkeit & [m^3] \\
 \end{formulaexpanded}
 
+\subsection{Oberflächenspannung}
+\begin{formulaexpanded}
+	{\sigma = \frac{F}{l}}
+	\sigma & Grensflächenspannung & [] \\
+	F & Kraft & [N] \\
+	l & Länge & [m] \\
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{h = \frac{2\sigma}{\rho g r} = \frac{\sigma}{\rho g d}}
+	\sigma & Grensflächenspannung & [] \\
+	h & Kapillarität \kuchling{179} & [N] \\
+	\rho & Dichte & [\frac{kg}{m^3}] \\
+	g & Erdbeschl. & [\frac{m}{s^2}] \\
+	r & Radius der Kapillare & [m] \\
+	d & Durchmesser der Kapillare & [m] \\
+\end{formulaexpanded}
+
+\begin{formulaexpanded}
+	{p = \frac{2 \sigma}{r}}
+	\sigma & Grensflächenspannung & [] \\
+	r & Radius der Kapillare & [m] \\
+	p & Druck in Kapillare & [Pa] \\
+\end{formulaexpanded}
+
 \subsection{Kontinuitäts-/ Bernoulligleichung}
 Oft werden folgende Gleichungen für eine Aufgabe benötigt. \kuchling{162ff}
 \begin{formulaexpanded}
@@ -33,14 +58,26 @@ Dynamische Viskosität $\eta$ \kuchling{168}
 	v & Relativgeschwindigkeit zwischen Begrenzungsflächen & [m/s] \\
 \end{formulaexpanded}
 
-\begin{minipage}{\textwidth}	
-	\todo{Laminar oder Turbulent via Reynoldszahl}
-	
+\begin{minipage}{\textwidth}		
 	\begin{minipage}{0.2\textwidth}
 		\includegraphics[width=\columnwidth]{Images/Strömungen}
 	\end{minipage}%%% to prevent a space
 	\begin{minipage}{0.3\textwidth}
-		
+		\begin{enumerate}[nosep]
+			\item Laminar Rechnen
+			\item Aus Resultat $Re$ berechnen
+			\item mit $Re_{kritisch}$ vergleichen
+			\item bei überschreiten Turbulent rechnen
+		\end{enumerate}
+	\begin{formulaexpanded}
+		{\text{Lam:}	\lambda = \frac{64}{Re}  \quad \text{Turb:} \lambda = \frac{0.316}{\sqrt[4]{Re}} \\
+		\Delta p = \lambda \frac{l\rho v^2}{2 d}}
+		\Delta p & Druckabfall & [Pa] \\
+		l & Rohrlänge & [m] \\
+		d & Rohrdurchmesser & [m] \\
+		\rho & Dichte des Fluids & [\frac{kg}{m^3}] \\
+		v & Fliessgeschw. & [\frac{m}{s}]
+	\end{formulaexpanded}
 	\end{minipage}
 \end{minipage}
 
@@ -79,5 +116,3 @@ Dynamische Viskosität $\eta$ \kuchling{168}
 		\end{formulaexpanded}
 	\end{minipage}
 \end{minipage}
-
-\newpage

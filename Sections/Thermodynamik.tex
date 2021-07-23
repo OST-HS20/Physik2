@@ -55,6 +55,9 @@ Gas-Konstante: $R = k_B \cdot N_A = 8.314 \frac{J}{mol\cdot K}$\\
 \subsubsection{Zustandsänderung \kuchling{297}}
 \noindent\textbf{Isochor} (gleiches Volumen) \kuchling{287}
 \begin{formula}
+	{\frac{p}{T} = Konstant}
+\end{formula}
+\begin{formula}
 	{Q = m \cdot c_{v} \cdot \Delta T}
 	Q & Wärmeenergie & [J] \\
 	c_v & spezifische Wärmekapazität & [\frac{J}{kgK}] \\
@@ -67,6 +70,9 @@ Gas-Konstante: $R = k_B \cdot N_A = 8.314 \frac{J}{mol\cdot K}$\\
 ~\\
 
 \noindent\textbf{Isobar}  (gleicher Druck)\kuchling{288}
+\begin{formula}
+	{\frac{V}{T} = Konstant}
+\end{formula}
 \begin{formula}
 	{Q = m \cdot c_{p} \cdot \Delta T}
 	Q & Wärmeenergie & [J] \\
@@ -106,7 +112,7 @@ Gas-Konstante: $R = k_B \cdot N_A = 8.314 \frac{J}{mol\cdot K}$\\
 	{W = c_v \cdot m \cdot \Delta T}
 	W & Arbeit & [J] \\
 	c_v & spezifische Wärmekapazität & [\frac{J}{kgK}] \\
-	m & Masse des Gases & [kg] \\ 
+	m & Masse des Gases & [kg] \\  
 \end{formula}
 ~\\
 
@@ -179,14 +185,14 @@ Wärmebilanz. $+$ für Zugeführte Wärme-Menge, $-$ für abgeführte Wärme-Men
 
 \subsection{Wärmeleitung}
 \begin{formulaexpanded}
-	{\dot{Q_W} = A \cdot J = A\cdot k \cdot \Delta T}
-	\dot{Q_W} & Wärmetransport durch Leitung & [W] \\
+	{P = \dot{Q}_W = A \cdot J = A\cdot k \cdot \Delta T}
+	\dot{Q}_W & Wärmetransport durch Leitung & [W] \\
 	J & Wärmestromdichte & [\frac{W}{m^2}] \\
 	A & Fläche & [m^2] \\
 	k & Wärmedurchgangskoeff. \kuchling{326} & [\frac{W}{m^2K}] \\
 \end{formulaexpanded}
 \begin{formulaexpanded}
-	{\dot{Q}_L = c_p \cdot \rho \cdot \dot{V} \cdot \Delta T}
+	{P= \dot{Q}_L = c_p \cdot \rho \cdot \dot{V} \cdot \Delta T}
 	\dot{Q}_L & Wärmetransport durch Fluid & [W] \\
 	c_p & Spezifische Wärmekapazität & [\frac{kJ}{kgK}] \\
 	\dot{V} & Volumenstrom & [\frac{m^3}{s}] \\
@@ -265,11 +271,11 @@ Bei \textbf{Wasser} kann der Dampfdruck mit der Magnus-Formel berechnet werden. 
 
 \begin{formulaexpanded}
 	{f = \frac{m_w}{V} \qquad f_r = \frac{m_w}{m_s} = \frac{p_D}{p_S}}
-	f & Absolute Luftfeuchtigkeit & [] \\
-	m_w & Masse Wasserdampf & [] \\
-	m_s & Masse Wasserdampf bei Sättigung & [] \\
-	p_D & Partialdruck Wasserdampf & [] \\
-	p_S & Sättigungsdruck Wasserdampf & [] \\
+	f & Absolute Luftfeuchtigkeit & [-] \\
+	m_w & Masse Wasserdampf & [kg] \\
+	m_s & Masse Wasserdampf bei Sättigung & [kg] \\
+	p_D & Partialdruck Wasserdampf & [Pa] \\
+	p_S & Sättigungsdruck Wasserdampf & [Pa] \\
 	V & Volumen & [m^3] \\
 \end{formulaexpanded}
 
@@ -279,4 +285,32 @@ Bei \textbf{Wasser} kann der Dampfdruck mit der Magnus-Formel berechnet werden. 
 	f_{ra} & Relative Aussen-Feuchte & [\%] \\
 	\theta_i & Innen Temperatur & [^\circ C] \\
 	\theta_a & Aussen Temperatur & [^\circ C] \\
+\end{formulaexpanded}
+
+\subsection{Wirkungsgrad}
+Adiabaten-Gleichung:
+\begin{formulaexpanded}
+	{\kappa = \frac{c_{mp}}{c_{mV}}}
+	\kappa & Adiabaten-Exponent & [-] \\
+	c_{mp} & Molare Wärmekapazität bei konstantem Druck & [] \\
+	c_{mV} & Molare Wärmekapazität bei konstantem Volumen & [] \\
+\end{formulaexpanded}
+\begin{formulaexpanded}
+	{pV^\kappa = T V^{\kappa-1} = T^\kappa p^{1-\kappa} = \text{Konstant}}
+	p & Druck & [Pa] \\
+	V & Volumen & [m^3] \\
+	\kappa & Adiabaten-Exponent & [-]
+\end{formulaexpanded}
+
+
+\subsubsection{Carnot-Wirkungsgrad}
+\textbf{Wärmekraftmaschine}
+\begin{formula}
+	{\eta_C = \frac{\Delta T}{T_{hoch}}}
+\end{formula}
+\textbf{Wärmepumpe}
+\begin{formulaexpanded}
+	{\eta_{iC} = \frac{T_{hoch}}{\Delta T}}
+	\Delta T & Temperatur Diff. von Warm/Kalt Reservoir & [K] \\
+	T_{hoch} & Temperatur Warm-Reservoir & [K]
 \end{formulaexpanded}
